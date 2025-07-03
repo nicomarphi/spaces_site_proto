@@ -2,5 +2,21 @@
     "buildCommand": "cd shopify-ny && npm run build",
     "outputDirectory": "shopify-ny/dist",
     "installCommand": "cd shopify-ny && npm install",
-    "framework": null
+    "framework": null,
+    "functions": {
+        "api/videos/*.js": {
+            "maxDuration": 30
+        }
+    },
+    "headers": [
+        {
+            "source": "/videos/(.*)",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=31536000, immutable"
+                }
+            ]
+        }
+    ]
 }
