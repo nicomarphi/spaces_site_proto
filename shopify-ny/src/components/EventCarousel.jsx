@@ -45,34 +45,27 @@ const EventCarousel = () => {
     };
 
     return (
-        <section id="events" className="py-12 -mt-[145px] md:-mt-[177px] relative z-10">
-            <div className="container mx-auto px-4">
-                {/* Header with title and navigation */}
-                <div className="flex justify-between items-center mb-8">
-                    <h2 className="text-2xl md:text-3xl font-light text-white">The Events</h2>
-
-                    {/* Navigation arrows */}
-                    <div className="flex gap-2">
-                        <button
-                            onClick={scrollLeftBtn}
-                            className="bg-white/10 hover:bg-white/20 border border-white/20 rounded-full p-2 transition-all"
-                            aria-label="Scroll left"
-                        >
-                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                            </svg>
-                        </button>
-                        <button
-                            onClick={scrollRightBtn}
-                            className="bg-white/10 hover:bg-white/20 border border-white/20 rounded-full p-2 transition-all"
-                            aria-label="Scroll right"
-                        >
-                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+        <section id="events" className="py-12 -mt-[160px] md:-mt-[200px] relative z-10">
+            {/* Navigation arrows positioned in top right of carousel */}
+            <div className="absolute top-8 right-8 z-20 flex gap-2">
+                <button
+                    onClick={scrollLeftBtn}
+                    className="bg-white/10 hover:bg-white/20 border border-white/20 rounded-full p-2 transition-all"
+                    aria-label="Scroll left"
+                >
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button
+                    onClick={scrollRightBtn}
+                    className="bg-white/10 hover:bg-white/20 border border-white/20 rounded-full p-2 transition-all"
+                    aria-label="Scroll right"
+                >
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
             </div>
 
             {/* Full-width scrollable container */}

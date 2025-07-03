@@ -17,8 +17,7 @@ const OurSpaceCTA = () => {
                     {/* All text content on the left */}
                     <div>
                         <div className="overflow-hidden pt-3 pb-4 mb-8">
-                            <h1 ref={spaceRef} className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-light text-white text-left tracking-tighter leading-[0.75] sm:leading-[0.65] md:leading-[0.6]"
-                                style={{ letterSpacing: '-0.02em' }}
+                            <h1 ref={spaceRef} className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-light text-white text-left tracking-tighter leading-[0.85] sm:leading-[0.7] md:leading-[0.55]"
                             >
                                 <VerticalCutReveal
                                     splitBy="words"
@@ -65,7 +64,7 @@ const OurSpaceCTA = () => {
                         <div className="flex gap-4 flex-wrap">
                             <Link
                                 to="/partnership"
-                                className="text-white underline hover:no-underline"
+                                className="inline-block bg-black text-white px-8 py-3 rounded-full font-semibold text-lg border-2 border-white hover:bg-white hover:text-black transition-colors"
                             >
                                 Learn more
                             </Link>
