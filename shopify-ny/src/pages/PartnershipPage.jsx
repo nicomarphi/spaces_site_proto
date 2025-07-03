@@ -255,42 +255,42 @@ function PartnershipPage() {
                                 What You Get
                             </VerticalCutReveal>
                         </h1>
-                        <p className="text-lg text-gray-400 text-right">
+                        <p className="text-lg text-gray-400 text-left md:text-right">
                             When you partner with us, you'll get access to:
                         </p>
                     </div>
 
                     {/* List format */}
-                    <div className="max-w-5xl">
+                    <div className="w-full">
                         {/* Item 1 */}
-                        <div className="py-8 border-b border-gray-800">
-                            <div className="grid md:grid-cols-[1fr,2fr] gap-8 items-start">
+                        <div className="py-6 md:py-8 border-b border-gray-800">
+                            <div className="grid grid-cols-1 lg:grid-cols-[1fr,2fr] gap-4 md:gap-8 items-start">
                                 <h3 className="text-xl md:text-2xl font-light text-white">A beautiful, fully staffed venue — free of charge</h3>
-                                <p className="text-gray-400 text-lg">Located at 131 Greene Street, our space includes high-end retail fittings, street-level visibility, and a flexible garden level for activations or workshops.</p>
+                                <p className="text-gray-400 text-base md:text-lg">Located at 131 Greene Street, our space includes high-end retail fittings, street-level visibility, and a flexible garden level for activations or workshops.</p>
                             </div>
                         </div>
 
                         {/* Item 2 */}
-                        <div className="py-8 border-b border-gray-800">
-                            <div className="grid md:grid-cols-[1fr,2fr] gap-8 items-start">
+                        <div className="py-6 md:py-8 border-b border-gray-800">
+                            <div className="grid grid-cols-1 lg:grid-cols-[1fr,2fr] gap-4 md:gap-8 items-start">
                                 <h3 className="text-xl md:text-2xl font-light text-white">Full event production support</h3>
-                                <p className="text-gray-400 text-lg">We provide on-site staff, security, and a dedicated event manager to help with planning, marketing, and execution.</p>
+                                <p className="text-gray-400 text-base md:text-lg">We provide on-site staff, security, and a dedicated event manager to help with planning, marketing, and execution.</p>
                             </div>
                         </div>
 
                         {/* Item 3 */}
-                        <div className="py-8 border-b border-gray-800">
-                            <div className="grid md:grid-cols-[1fr,2fr] gap-8 items-start">
+                        <div className="py-6 md:py-8 border-b border-gray-800">
+                            <div className="grid grid-cols-1 lg:grid-cols-[1fr,2fr] gap-4 md:gap-8 items-start">
                                 <h3 className="text-xl md:text-2xl font-light text-white">Promotion to our community</h3>
-                                <p className="text-gray-400 text-lg">Your event will be featured on our site, in our localized newsletter, and through targeted paid promotion.</p>
+                                <p className="text-gray-400 text-base md:text-lg">Your event will be featured on our site, in our localized newsletter, and through targeted paid promotion.</p>
                             </div>
                         </div>
 
                         {/* Item 4 */}
-                        <div className="py-8 border-b border-gray-800">
-                            <div className="grid md:grid-cols-[1fr,2fr] gap-8 items-start">
+                        <div className="py-6 md:py-8 border-b border-gray-800">
+                            <div className="grid grid-cols-1 lg:grid-cols-[1fr,2fr] gap-4 md:gap-8 items-start">
                                 <h3 className="text-xl md:text-2xl font-light text-white">Retail-ready tech & amenities</h3>
-                                <p className="text-gray-400 text-lg">From Shopify PoS hardware and digital signage to built-in cold brew taps and a full café setup, the space is designed to host and sell.</p>
+                                <p className="text-gray-400 text-base md:text-lg">From Shopify PoS hardware and digital signage to built-in cold brew taps and a full café setup, the space is designed to host and sell.</p>
                             </div>
                         </div>
 
