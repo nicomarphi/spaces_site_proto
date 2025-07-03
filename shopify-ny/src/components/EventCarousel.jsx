@@ -90,7 +90,7 @@ const EventCarousel = () => {
                     {eventsData.events.map((event) => (
                         <div
                             key={event.id}
-                            className={`flex-none w-[240px] md:w-[280px] relative rounded-lg overflow-hidden ${event.status === 'past' ? 'opacity-60' : ''
+                            className={`group flex-none w-[240px] md:w-[280px] relative rounded-lg overflow-hidden ${event.status === 'past' ? 'opacity-60' : ''
                                 }`}
                             style={{ aspectRatio: '2/3' }}
                         >
@@ -98,7 +98,7 @@ const EventCarousel = () => {
                             <img
                                 src={event.posterImage}
                                 alt={event.title}
-                                className="absolute inset-0 w-full h-full object-cover"
+                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                                 draggable={false}
                             />
 
@@ -108,23 +108,23 @@ const EventCarousel = () => {
                             {/* Content */}
                             {event.status === 'sold_out' ? (
                                 <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                                    <div className="text-center">
+                                    <div className="text-center transition-transform duration-300 ease-out group-hover:scale-105">
                                         <p className="text-white text-xl italic mb-2">Sorry</p>
                                         <p className="text-white text-5xl md:text-6xl font-normal leading-[0.75]">SOLD OUT</p>
                                     </div>
                                 </div>
                             ) : (
-                                <div className="absolute bottom-0 left-0 right-0 p-6">
-                                    <h3 className="text-white text-2xl md:text-3xl font-normal mb-2 leading-[0.75] tracking-tight">
+                                <div className="absolute bottom-0 left-0 right-0 p-6 transition-transform duration-300 ease-out group-hover:-translate-y-2">
+                                    <h3 className="text-white text-2xl md:text-3xl font-normal mb-2 leading-[0.75] tracking-tight transition-transform duration-300 ease-out group-hover:scale-105 origin-bottom-left">
                                         {event.title}
                                     </h3>
-                                    <p className="text-white/90 text-lg">{event.date}</p>
+                                    <p className="text-white/90 text-lg transition-all duration-300 ease-out group-hover:text-white">{event.date}</p>
                                     {event.status === 'upcoming' && (
                                         <a
                                             href={event.splashUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-block mt-4 bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors"
+                                            className="inline-block mt-4 bg-white text-black px-6 py-2 rounded-full font-medium transition-all duration-300 ease-out hover:bg-gray-100 group-hover:scale-105 group-hover:-translate-y-1"
                                         >
                                             RSVP
                                         </a>
@@ -134,7 +134,7 @@ const EventCarousel = () => {
 
                             {/* Sold out button overlay */}
                             {event.status === 'sold_out' && (
-                                <div className="absolute bottom-6 left-6 right-6">
+                                <div className="absolute bottom-6 left-6 right-6 transition-all duration-300 ease-out group-hover:-translate-y-2 group-hover:scale-105">
                                     <button
                                         disabled
                                         className="w-full bg-white text-black px-6 py-3 rounded-full font-medium opacity-90 cursor-not-allowed"

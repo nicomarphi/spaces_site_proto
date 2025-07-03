@@ -122,7 +122,7 @@ function PhotoGallery() {
                     {photos.map((photo, index) => (
                         <div
                             key={index}
-                            className={`relative flex-shrink-0 bg-gray-900 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:rotate-0 cursor-pointer shadow-lg ${photo.orientation === 'portrait' ? 'w-48 h-72' : 'w-72 h-48'
+                            className={`relative flex-shrink-0 bg-gray-900 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:rotate-0 cursor-pointer shadow-lg ${photo.orientation === 'portrait' ? 'w-64 h-96' : 'w-96 h-64'
                                 }`}
                             style={{
                                 transform: `rotate(${photo.rotate}deg)`,
@@ -169,9 +169,9 @@ function PartnershipPage() {
     return (
         <div className="min-h-screen bg-black">
             {/* Hero Section */}
-            <section className="pt-24 pb-20">
+            <section className="pt-24 pb-12">
                 <div className="container mx-auto px-4">
-                    <div className="grid md:grid-cols-2 gap-8 items-end mb-12">
+                    <div className="mb-8">
                         <div className="overflow-hidden py-2">
                             <h1 ref={heroRef} className="text-5xl md:text-6xl lg:text-7xl font-light text-white tracking-tight text-left leading-[0.95] md:leading-[0.7]"
                                 style={{ letterSpacing: '-0.02em' }}
@@ -193,21 +193,18 @@ function PartnershipPage() {
                                 </VerticalCutReveal>
                             </h1>
                         </div>
-                        <p className="text-xl md:text-2xl text-gray-300 font-light text-right">
+                        <p className="text-xl md:text-2xl text-gray-300 font-light text-left mt-4">
                             A community hub for commerce, culture, and connection.
                         </p>
                     </div>
-                    <p className="text-lg text-gray-400 max-w-3xl">
-                        Shopify NY is a 5,000-square-foot, two-level space in SoHo where the most creative minds in commerce come together to build, connect, and grow. Since 2021, it's been home to everything from founder-led panels and retail pop-ups to late-night product drops, tastemaker marketplaces, and community workshops.
-                    </p>
                 </div>
             </section>
 
             {/* Video/Image Gallery Section - Placeholder */}
-            <section className="pt-2 pb-12 bg-black">
+            <section className="pb-12 bg-black">
                 <div className="container mx-auto px-4 mb-8">
                     <div
-                        className="relative aspect-video bg-gray-800 max-w-6xl mx-auto rounded-lg overflow-hidden"
+                        className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden"
                         style={{
                             transform: 'translateZ(0)',
                             WebkitMaskImage: '-webkit-radial-gradient(white, white)',
@@ -233,7 +230,7 @@ function PartnershipPage() {
             </section>
 
             {/* What You Get Section */}
-            <section className="py-20 bg-black">
+            <section className="py-16 bg-black">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-8 items-end mb-16">
                         <h1 ref={whatYouGetRef} className="text-4xl md:text-5xl lg:text-6xl font-light text-white text-left tracking-tight leading-[0.95] md:leading-[0.7]"
@@ -304,7 +301,7 @@ function PartnershipPage() {
             </section>
 
             {/* The Space Details Section */}
-            <section className="py-20 bg-black border-t border-gray-800">
+            <section className="py-16 bg-black border-t border-gray-800">
                 <div className="container mx-auto px-4">
                     <h1 ref={theSpaceRef} className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-16 text-left tracking-tight leading-[0.95] md:leading-[0.7]"
                         style={{ letterSpacing: '-0.02em' }}
@@ -353,7 +350,7 @@ function PartnershipPage() {
             </section>
 
             {/* Who It's For Section */}
-            <section className="py-20 bg-black">
+            <section className="py-16 bg-black border-t border-gray-800">
                 <div className="container mx-auto px-4">
                     <h1 ref={whoItsForRef} className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-16 text-left tracking-tight leading-[0.95] md:leading-[0.7]"
                         style={{ letterSpacing: '-0.02em' }}
@@ -503,9 +500,9 @@ function PartnershipPage() {
                     </h1>
 
                     {/* Masonry Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto masonry-grid">
+                    <div className="columns-1 md:columns-2 lg:columns-3 gap-6 max-w-6xl mx-auto">
                         {/* Quote 1 - Tall Card */}
-                        <div className="relative rounded-2xl overflow-hidden h-[450px] md:h-[500px] hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group">
+                        <div className="relative rounded-2xl overflow-hidden h-[440px] hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] mb-6 break-inside-avoid">
                             <img
                                 src="/images/u7312621251_colorful_gradient_ethereal_--ar_23_--profile_mm6n_7ac23999-908b-4d8b-8418-397ecbaeb7e8_1.png"
                                 alt="Testimonial background"
@@ -520,10 +517,26 @@ function PartnershipPage() {
                             </div>
                         </div>
 
-                        {/* Quote 2 - Medium Card */}
-                        <div className="relative rounded-2xl overflow-hidden h-[380px] md:h-[420px] hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]">
+                        {/* Quote 2 - Short Card */}
+                        <div className="relative rounded-2xl overflow-hidden h-[280px] hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] mb-6 break-inside-avoid">
                             <img
                                 src="/images/u7312621251_background_gradient_graphic_poster_--ar_23_--prof_b9840bb9-7cc2-4c5c-9cab-89f5082ceb95_0.png"
+                                alt="Testimonial background"
+                                className="absolute inset-0 w-full h-full object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/40" />
+                            <div className="absolute inset-0 flex flex-col justify-end p-8 pb-10">
+                                <p className="text-lg md:text-xl text-white mb-4 font-light italic leading-relaxed">
+                                    "Shopify NY is hands-down one of the best event spaces in the city."
+                                </p>
+                                <p className="text-white/80 text-sm">— Olivia Ho, Founder, The Give and Grow</p>
+                            </div>
+                        </div>
+
+                        {/* Quote 3 - Medium Card */}
+                        <div className="relative rounded-2xl overflow-hidden h-[360px] hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] mb-6 break-inside-avoid">
+                            <img
+                                src="/images/u7312621251_illustration_of_latino_culture_still_life_fun_pop_40f89261-73c3-4cd8-b871-565f97118672_3.png"
                                 alt="Testimonial background"
                                 className="absolute inset-0 w-full h-full object-cover"
                             />
@@ -536,24 +549,8 @@ function PartnershipPage() {
                             </div>
                         </div>
 
-                        {/* Quote 3 - Short Card */}
-                        <div className="relative rounded-2xl overflow-hidden h-[320px] md:h-[360px] hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]">
-                            <img
-                                src="/images/u7312621251_illustration_of_latino_culture_still_life_fun_pop_40f89261-73c3-4cd8-b871-565f97118672_3.png"
-                                alt="Testimonial background"
-                                className="absolute inset-0 w-full h-full object-cover"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/40" />
-                            <div className="absolute inset-0 flex flex-col justify-end p-8 pb-10">
-                                <p className="text-xl md:text-2xl text-white mb-6 font-light italic leading-relaxed">
-                                    "Shopify NY is hands-down one of the best event spaces in the city."
-                                </p>
-                                <p className="text-white/80 text-sm">— Olivia Ho, Founder, The Give and Grow</p>
-                            </div>
-                        </div>
-
-                        {/* Additional testimonials for fuller grid */}
-                        <div className="relative rounded-2xl overflow-hidden h-[320px] md:h-[360px] hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] lg:col-span-2">
+                        {/* Quote 4 - Tall Card */}
+                        <div className="relative rounded-2xl overflow-hidden h-[420px] hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] mb-6 break-inside-avoid">
                             <img
                                 src="/images/u7312621251_background_gradient_graphic_poster_--ar_23_--prof_85f64a58-42ce-497d-85d6-2bf827a791ba_1.png"
                                 alt="Testimonial background"
@@ -568,7 +565,8 @@ function PartnershipPage() {
                             </div>
                         </div>
 
-                        <div className="relative rounded-2xl overflow-hidden h-[400px] md:h-[440px] hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]">
+                        {/* Quote 5 - Medium Card */}
+                        <div className="relative rounded-2xl overflow-hidden h-[340px] hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] mb-6 break-inside-avoid">
                             <img
                                 src="/images/u7312621251_colorful_gradient_ethereal_--ar_23_--profile_mm6n_7ac23999-908b-4d8b-8418-397ecbaeb7e8_3.png"
                                 alt="Testimonial background"
