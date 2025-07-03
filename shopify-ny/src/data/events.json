@@ -1,0 +1,55 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "title": "The Takeover Night",
+            "date": "July 8, 2024",
+            "time": "5:30 PM - 8:30 PM",
+            "daysAway": "6 days away",
+            "status": "upcoming",
+            "splashUrl": "https://events.shopifyny.com/culturathetakeovernight/shopifyny",
+            "posterImage": "/images/u7312621251_background_gradient_graphic_poster_--ar_23_--prof_85f64a58-42ce-497d-85d6-2bf827a791ba_0.png",
+            "tag": "Event"
+        },
+        {
+            "id": 2,
+            "title": "Picakidz Pop-up",
+            "date": "July 12, 2024",
+            "time": "11:00 AM - 6:00 PM",
+            "status": "upcoming",
+            "splashUrl": "https://events.shopifyny.com/picakidzpopup/shopifyny",
+            "posterImage": "/images/u7312621251_colorful_gradient_ethereal_--ar_23_--profile_mm6n_7ac23999-908b-4d8b-8418-397ecbaeb7e8_1.png",
+            "tag": "Pop-Up"
+        },
+        {
+            "id": 3,
+            "title": "Harnessing AI: A New Era for DTC Brands",
+            "date": "July 15, 2024",
+            "time": "6:00 PM - 8:30 PM",
+            "status": "upcoming",
+            "splashUrl": "https://events.shopifyny.com/harnessingai/shopifyny",
+            "posterImage": "/images/u7312621251_background_gradient_graphic_poster_--ar_23_--prof_b9840bb9-7cc2-4c5c-9cab-89f5082ceb95_0.png",
+            "tag": "Workshop"
+        },
+        {
+            "id": 4,
+            "title": "Founders For Founders: The Check-In",
+            "date": "July 16, 2024",
+            "time": "1:00 PM - 8:00 PM",
+            "status": "upcoming",
+            "splashUrl": "https://events.shopifyny.com/foundersforfounders/shopifyny",
+            "posterImage": "/images/u7312621251_colorful_gradient_ethereal_--ar_23_--profile_mm6n_7ac23999-908b-4d8b-8418-397ecbaeb7e8_3.png",
+            "tag": "Networking"
+        },
+        {
+            "id": 5,
+            "title": "Warmies in The Big Apple",
+            "date": "July 19-20, 2024",
+            "time": "10:00 AM - 5:00 PM",
+            "status": "upcoming",
+            "splashUrl": "https://events.shopifyny.com/warmiespopup/shopifyny",
+            "posterImage": "/images/u7312621251_illustration_of_latino_culture_still_life_fun_pop_40f89261-73c3-4cd8-b871-565f97118672_3.png",
+            "tag": "Pop-Up"
+        }
+    ]
+}

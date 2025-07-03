@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar for photo gallery */
+.scrollbar-thin::-webkit-scrollbar {
+    height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #4B5563;
+    border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #6B7280;
+}
+
+/* Masonry grid for testimonials */
+@supports (grid-template-rows: masonry) {
+    .masonry-grid {
+        grid-template-rows: masonry;
+    }
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/InterTight-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/InterTight-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/InterTight-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/InterTight-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/InterTight-Bold.ttf') format('truetype');
+}
+
+@layer base {
+    body {
+        font-family: 'Inter Tight', system-ui, -apple-system, sans-serif;
+        font-weight: 300;
+        background-color: black;
+        line-height: 1.6;
+        letter-spacing: -0.02em;
+    }
+
+    h1 {
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+    }
+
+    @media (min-width: 768px) {
+        h1 {
+            line-height: 0.7;
+        }
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 0.95;
+        letter-spacing: -0.03em;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    @media (min-width: 768px) {
+        p {
+            line-height: 1.7;
+        }
+    }
+}
